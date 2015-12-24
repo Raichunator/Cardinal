@@ -61,13 +61,13 @@ https://github.com/JohnMaguire/Cardinal
 
     # Define the config spec and create a parser for our internal config
     spec = ConfigSpec()
-    spec.add_option('nickname', basestring, 'Cardinal')
+    spec.add_option('nickname', basestring, 'Pledra')
     spec.add_option('password', basestring, None)
     spec.add_option('network', basestring, 'irc.freenode.net')
     spec.add_option('port', int, 6667)
     spec.add_option('server_password', basestring, None)
     spec.add_option('ssl', bool, False)
-    spec.add_option('channels', list, ['#bots'])
+    spec.add_option('channels', list, ['#oca-test'])
     spec.add_option('plugins', list, [
         'ping',
         'help',
