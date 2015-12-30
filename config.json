@@ -1,0 +1,29 @@
+{
+        "nickname": "Pledra",
+        "password": "pledra123@",
+        "network": "irc.freenode.net",
+        "server_password": "SERVER PASSWORD (IF NECESSARY)",
+        "port": 6667,
+        "ssl": false,
+        "channels": [
+                "#oca-test"
+        ],
+        "plugins": [
+                "admin",
+                "calculator",
+                "help",
+                "join_on_invite",
+                "lastfm",
+                "notes",
+                "ping",
+                "remind",
+                "urls",
+                "weather",
+                "wikipedia",
+                "youtube",
+                "google",
+                "timezone",
+                "github",
+                "interact"
+        ]
+}
