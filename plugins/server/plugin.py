@@ -11,7 +11,7 @@ class Simple(resource.Resource):
   def render_GET(self, request):
     return "<html>Hello, world!</html>"
 
-  def render_POST(self, request):
+  def render_POST(self, request, user, channel, cardinal, msg):
     data = json.loads(request.content.read())
     import ipdb;ipdb.set_trace()
     return ""
