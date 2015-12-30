@@ -25,6 +25,6 @@
                 "timezone",
                 "github",
                 "interact",
-                "server"
+                "web_server"
         ]
 }
