@@ -21,9 +21,25 @@ class InteractPlugin(object):
 			else:
 				greetings.extend(night_greetings)
 
-			greeting_message = "%s %s" % (random.choice(greetings), nick)
-			cardinal.sendMsg(channel, greeting_message)
+			random_greeting = random.choice(greetings)
 
+			if random.randrange(2):
+				random_greeting = random_greeting.lower()
+
+			greeting_message = "%s %s" % (random_greeting, nick)
+			cardinal.sendMsg(channel, greeting_message)
+			time.sleep(1)
+
+
+	# def multi_hello(self, cardinal, user, channel, msg):
+	# 	question = ['Will you stop with the hello?',
+	# 				'I have greet you twice now... will you tell me what you need?',
+	# 				'Stop with the hello..'
+	# 				'Are you blind? I have already said hi..'
+	# 				]
+	# 	nick, ident, vhost = user.group(1), user.group(2), user.group(3)
+	# 	if user.group(1) == command(['hello']) * 2:
+	# 		return cardinal.sendMsg(channel, random.choice(question))
 
 
 def setup():

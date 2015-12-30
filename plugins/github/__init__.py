@@ -1,5 +1,5 @@
 # Plugin author
-__author__ = 'Sol Bekic'
+__author__ = 'Pledra'
 
 # Plugin homepage
-__url__ = 'https://github.com/JohnMaguire2013/Cardinal/'
+__url__ = 'https://github.com/OCA'
