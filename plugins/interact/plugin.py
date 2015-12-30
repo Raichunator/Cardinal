@@ -28,7 +28,7 @@ class InteractPlugin(object):
 
 			greeting_message = "%s %s" % (random_greeting, nick)
 			cardinal.sendMsg(channel, greeting_message)
-			time.sleep(1)
+			time.sleep(2)
 
 
 	# def multi_hello(self, cardinal, user, channel, msg):

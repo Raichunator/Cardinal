@@ -8,15 +8,18 @@ import json
 
 class Simple(resource.Resource):
   isLeaf = True
-    def render_GET(self, request):
-      return "<html>Hello, world!</html>"
+  def render_GET(self, request):
+    return "<html>Hello, world!</html>"
 
-    def render_POST(self, request):
-      data = json.loads(request.content.read())
-      return ""
+  def render_POST(self, request):
+    data = json.loads(request.content.read())
+    import ipdb;ipdb.set_trace()
+    return ""
 
 
 site = server.Site(Simple())
 reactor.listenTCP(8973, site)
-reactor.run()
+
+def setup():
+    return Simple()
 
