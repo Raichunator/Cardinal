@@ -19,6 +19,11 @@ class Webserver(resource.Resource):
     def render_POST(self, request, **kwargs):
         data = json.loads(request.content.read())
         hook_name = data['hook']['name']
+        issue_id = data['issue']['id']
+        if 'id' in issue_id:
+            self.cardinal.sendMsg(self.config['channel'].encode('utf8'), str(issue_id))
+            return "<html><body>Issue Number: </body></html>"
+
 	self.cardinal.sendMsg(
 	    self.config['channel'].encode('utf8'), str(hook_name))
         return "<html><body>Payload received</body></html>"
