@@ -12,7 +12,7 @@ class Webserver(resource.Resource):
     def __init__(self, cardinal, config):
         self.cardinal = cardinal
 	self.config = config
-	self.allowed_actions = ['created', 'opened']
+	self.allowed_actions = ['opened']
 
 
     def render_GET(self, request):
