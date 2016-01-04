@@ -20,7 +20,6 @@ class Webserver(resource.Resource):
 
     def render_POST(self, request, **kwargs):
         data = json.loads(request.content.read())
-	import pdb; pdb.set_trace()
         if 'action' in data:
 	    if data['action'] in self.allowed_actions:
 	        if 'issue' in data: 
